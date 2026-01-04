@@ -1,0 +1,52 @@
+---
+
+const domainUrl = import.meta.env.DOMAIN_URL
+
+---
+
+<nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+    <div class="flex lg:flex-1">
+        <a href={ domainUrl } class="-m-1.5 p-1.5">
+            <span class="sr-only">Contaluz</span>
+            <img
+                src="/assets/contaluz-logo-transparent.png"
+                alt="contaluz"
+                class="h-24 w-auto"
+            />
+        </a>
+    </div>
+    <div class="flex lg:hidden pb-3 h-18 w-18">
+        <button
+            type="button"
+            command="show-modal"
+            commandfor="mobile-menu"
+            class="-m-1.5 inline-flex items-center justify-center rounded-md p-2.5 h-full  w-full text-gray-200"
+        >
+            <span class="sr-only">Open main menu</span>
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-6"
+            >
+                <path
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-md font-semibold text-white">Servicios</a>
+        <a href="#" class="text-md font-semibold text-white">Faqs</a>
+        <a href="#" class="text-md font-semibold text-white">Contacto</a>
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href={ domainUrl } class="text-2xl font-semibold text-white"
+            >Contaluz</a
+        >
+    </div>
+</nav>
