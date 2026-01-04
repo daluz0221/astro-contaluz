@@ -1,13 +1,97 @@
 ---
-import ServicesItem from "./ServicesItem.astro";
-
+import { ServicesItemReact } from "./ServicesItem";
 
 ---
 
-
-
-<div class="h-94 flex flex-1 justify-center items-center text-6xl font-semibold">
+<div
+    class="h-94 flex flex-1 justify-center items-center text-6xl font-semibold"
+>
     <h2>Servicios</h2>
 </div>
 
-<ServicesItem />
+<ServicesItemReact
+    bg="bg-[#ecf0f1]"
+    title="Asesoría contable"
+    text="Optimiza tus registros y toma decisiones con información clara."
+    image="/assets/asesor-financiero.webp"
+    details={{
+        description:
+            "Brindamos asesoría integral en contabilidad financiera, fiscal y administrativa para asegurar el cumplimiento normativo y la eficiencia en la gestión.",
+        cards: [
+            {
+                icon: "briefcase",
+                title: "Gestión Fiscal",
+                text: "Cumplimiento tributario y reportes.",
+            },
+            {
+                icon: "filetext" ,
+                title: "Informes",
+                text: "Elaboración de reportes claros y útiles.",
+            },
+            {
+                icon: "calculator",
+                title: "Optimización",
+                text: "Procesos contables más eficientes.",
+            },
+        ],
+    }}
+    client:load
+/>
+
+<ServicesItemReact
+    title="Declaración de Impuestos"
+    text="Cumple tus obligaciones tributarias sin complicaciones."
+    image="https://img.freepik.com/fotos-premium/formulario-1065-irs-declaracion-ingresos-sociedad-estadounidense_76080-9774.jpg"
+    reverse
+    details={{
+        description:
+            "Nos encargamos de la preparación, revisión y presentación de declaraciones fiscales, minimizando riesgos y aprovechando beneficios legales.",
+        cards: [
+            {
+                icon: "calculator",
+                title: "Planeación",
+                text: "Diseño de estrategias fiscales.",
+            },
+            {
+                icon: "filetext" ,
+                title: "Declaraciones",
+                text: "Presentación ante autoridades.",
+            },
+            {
+                icon: "briefcase",
+                title: "Soporte",
+                text: "Acompañamiento en auditorías.",
+            },
+        ],
+    }}
+    client:load
+/>
+
+<ServicesItemReact
+    bg="bg-[#ecf0f1]"
+    title="Auditoría Financiera"
+    text="Identifica riesgos y fortalece la confianza en tu negocio."
+    image="https://img.freepik.com/fotos-premium/empresario-lupa-documentos_220873-7940.jpg"
+    details={{
+        description:
+            "Realizamos auditorías financieras y operativas para garantizar transparencia, detectar áreas de mejora y fortalecer la toma de decisiones.",
+        cards: [
+            {
+                icon: "filetext",
+                title: "Reportes claros",
+                text: "Análisis profundo y accesible.",
+            },
+            {
+                icon: "briefcase" ,
+                title: "Control Interno",
+                text: "Evaluación de procesos internos.",
+            },
+            {
+                icon: "calculator",
+                title: "Eficiencia",
+                text: "Identificación de mejoras.",
+            },
+        ],
+    }}
+    client:load
+/>

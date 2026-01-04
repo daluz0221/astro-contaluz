@@ -1,0 +1,79 @@
+---
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
+---
+
+ <footer class='bg-[#ecf0f1] text-[#2c3e50] mt-12'>
+        <div class='max-w-7xl mx-auto px-6 py-10'>
+            {/* Fast Links */}
+            <nav class='flex flex-wrap justify-center gap-8 text-lg font-medium'>
+                <a href="#hero" class="hover:text-[#2ecc71] transition">
+                    Inicio
+                </a>
+                <a
+                    href="#servicios"
+                    class="hover:text-[#27ae60] transition"
+                >
+                    Servicios
+                </a>
+                <a href="#faqs" class="hover:text-[#27ae60] transition">
+                    FAQS
+                </a>
+                <a href="#contacto" class="hover:text-[#27ae60] transition">
+                    Contacto
+                </a>
+            </nav>
+
+             {/* Línea divisora */}
+            <div class="my-8 border-t border-gray-300" />
+
+             {/* Redes sociales */}
+                <div class="flex justify-center gap-6 mb-6">
+                <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-full hover:bg-[#2ecc71] hover:text-white transition"
+                >
+                    <Facebook className="w-6 h-6" />
+                </a>
+                <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-full hover:bg-[#2ecc71] hover:text-white transition"
+                >
+                    <Instagram className="w-6 h-6" />
+                </a>
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-full hover:bg-[#2ecc71] hover:text-white transition"
+                >
+                    <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-full hover:bg-[#2ecc71] hover:text-white transition"
+                >
+                    <Twitter className="w-6 h-6" />
+                </a>
+                <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 rounded-full hover:bg-[#2ecc71] hover:text-white transition"
+                >
+                    <Youtube className="w-6 h-6" />
+                </a>
+                </div>
+
+                {/* Derechos reservados */}
+                <p class="text-center text-sm text-gray-600">
+                © {new Date().getFullYear()} Derechos reservados, Luis Felipe Echeverry
+                </p>
+       
+        </div>
+    </footer>

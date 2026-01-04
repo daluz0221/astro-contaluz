@@ -1,4 +1,7 @@
 ---
+import { ContactForm } from "../components/contact/ContacForm";
+import WhatsappButton from "../components/contact/WhatsappButton.astro";
+import FaqGrid from "../components/faqs/FaqGrid.astro";
 import ServicesGrid from "../components/services/ServicesGrid.astro";
 import MainLayout from "../layout/MainLayout.astro";
 
@@ -8,4 +11,7 @@ import MainLayout from "../layout/MainLayout.astro";
 <MainLayout title="Home">
 
 	<ServicesGrid />
+	<FaqGrid />
+	<WhatsappButton />
+	<ContactForm />
 </MainLayout>
